@@ -33,14 +33,6 @@ abstract class Model
             sprintf('SELECT * FROM ' . static::TABLE . ' ORDER BY id DESC LIMIT %u', $lim),
             static::class) ?: false;
     }
-/*'SELECT * FROM ' . static::TABLE . ' ORDER BY '. static::Pk .' DESC  LIMIT %u', $limit
 
-    public static function findLastRecords($limit)
-    {
-        $db = new Db();
-        return $db->query(
-            sprintf('SELECT * FROM ' . static::TABLE . ' ORDER BY id DESC LIMIT %u', $limit),
-            static::class) ?: false;
-    }*/
 
 }
