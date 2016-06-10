@@ -49,13 +49,11 @@
     <p><a href="b_popular.html">Популярные байки</a></p>
     <p><a href="b_last.html">Последние байки</a></p>
 </div>
-<?php foreach ($news as $article):?>
-<div id="content">
-    <h2><?php echo $article->name ?> </h2>
-    <p><?php echo $article->text ?></p></br>
-    <a href = '/App/Controllers/article.php?id=<?php echo $article->id ?>'><i>ссылка</i></a>
-</div>
-<?php endforeach;?>
+    <div id="content">
+        <h2><?php echo $article->name ?> </h2>
+        <p><?php echo $article->text ?></p></br>
+        <a href = '/'><i>на главную</i></a>
+    </div>
 <div id="footer">&copy; </div>
 </body>
 </html>
